@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transport &amp; Unit Operations | ChemEngineer Hub</title>
+  <meta name="description" content="Fluid mechanics, heat transfer, mass transfer, distillation, absorption, and other unit operations for chemical engineers.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Chem<span>Engineer</span> Hub</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="fundamentals.html">Fundamentals</a></li>
+    <li><a href="transport-unit-ops.html" class="active">Transport &amp; Unit Ops</a></li>
+    <li><a href="process-plant.html">Process &amp; Plant</a></li>
+    <li><a href="next-gen.html">AI &amp; Next-Gen</a></li>
+    <li><a href="career-hub.html">Career Hub</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <h1>Transport &amp; <span>Unit Operations</span></h1>
+  <p>Fluid flow, heat and mass transfer, and separation processes that form the core of chemical plant design.</p>
+</div>
+
+<section>
+  <div class="section-header">
+    <span class="section-label">Module 1</span>
+    <h2>Fluid Mechanics &amp; Flow</h2>
+  </div>
+  <div class="grid-2">
+    <div class="content-block">
+      <h3>&#128260; Fluid Statics &amp; Dynamics</h3>
+      <p>Understanding pressure, flow regimes, and pipe flow is essential for pump selection, pipe sizing, and safety relief design.</p>
+      <ul>
+        <li>Reynolds number: Re = &rho;vD/&mu; (laminar &lt;2100, turbulent &gt;4000)</li>
+        <li>Bernoulli equation for ideal flow: P/&rho; + v&sup2;/2 + gz = constant</li>
+        <li>Darcy-Weisbach equation for pipe friction losses</li>
+        <li>Moody chart: friction factor vs. Reynolds number</li>
+      </ul>
+      <div class="formula-box">Re = &rho;vD / &mu;</div>
+    </div>
+    <div class="content-block">
+      <h3>&#9874; Pumps, Compressors &amp; Valves</h3>
+      <p>Mechanical equipment selection and sizing requires understanding pump curves, NPSH, and compressor work.</p>
+      <ul>
+        <li>Centrifugal vs. positive displacement pumps</li>
+        <li>Net Positive Suction Head (NPSH) requirements</li>
+        <li>Pump curve and system curve intersection</li>
+        <li>Compression work: isentropic and polytropic</li>
+      </ul>
+      <div class="formula-box">W<sub>pump</sub> = m&#775; &Delta;P / (&rho; &eta;)</div>
+    </div>
+  </div>
+</section>
+
+<div style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 4rem 2rem;">
+<section style="padding: 0;">
+  <div class="section-header">
+    <span class="section-label">Module 2</span>
+    <h2>Heat Transfer</h2>
+  </div>
+  <div class="grid-2">
+    <div class="content-block">
+      <h3>&#128293; Three Modes of Heat Transfer</h3>
+      <ul>
+        <li><strong style="color: var(--accent)">Conduction:</strong> q = -k A (dT/dx) — Fourier's Law</li>
+        <li><strong style="color: var(--accent)">Convection:</strong> q = h A (T<sub>s</sub> - T<sub>&infin;</sub>) — Newton's Law of Cooling</li>
+        <li><strong style="color: var(--accent)">Radiation:</strong> q = &sigma;&epsilon;A(T<sub>1</sub>&sup4; - T<sub>2</sub>&sup4;) — Stefan-Boltzmann</li>
+      </ul>
+      <div class="formula-box">Q = U A &Delta;T<sub>lm</sub></div>
+    </div>
+    <div class="content-block">
+      <h3>&#9881; Heat Exchangers</h3>
+      <p>Shell-and-tube, plate, and double-pipe heat exchangers are designed using the LMTD or NTU-effectiveness methods.</p>
+      <ul>
+        <li>Log Mean Temperature Difference (LMTD) method</li>
+        <li>NTU-effectiveness method for unknown outlet temps</li>
+        <li>Overall heat transfer coefficient U calculation</li>
+        <li>Fouling factors and their impact on design area</li>
+      </ul>
+      <div class="formula-box">&Delta;T<sub>lm</sub> = (&Delta;T<sub>1</sub> - &Delta;T<sub>2</sub>) / ln(&Delta;T<sub>1</sub>/&Delta;T<sub>2</sub>)</div>
+    </div>
+  </div>
+</section>
+</div>
+
+<section>
+  <div class="section-header">
+    <span class="section-label">Module 3</span>
+    <h2>Mass Transfer &amp; Separation Processes</h2>
+  </div>
+  <div class="grid-2">
+    <div class="content-block">
+      <h3>&#128200; Diffusion &amp; Mass Transfer Coefficients</h3>
+      <p>Mass transfer drives separations like distillation, absorption, and extraction. Fick's laws describe molecular diffusion.</p>
+      <ul>
+        <li>Fick's First Law: J = -D (dC/dz)</li>
+        <li>Film theory and mass transfer coefficients</li>
+        <li>Analogy between heat and mass transfer (Sh, Nu, Re, Sc, Pr)</li>
+        <li>Two-film resistance model for gas-liquid systems</li>
+      </ul>
+      <div class="formula-box">N<sub>A</sub> = k<sub>y</sub>(y<sub>A</sub> - y<sub>A*</sub>)</div>
+    </div>
+    <div class="content-block">
+      <h3>&#127757; Distillation</h3>
+      <p>Distillation is the most widely used separation operation in the chemical industry, separating components based on relative volatility.</p>
+      <ul>
+        <li>McCabe-Thiele graphical method for binary systems</li>
+        <li>Minimum reflux ratio (Underwood equation)</li>
+        <li>Fenske equation for minimum theoretical stages</li>
+        <li>Murphree tray efficiency</li>
+      </ul>
+      <div class="formula-box">&alpha;<sub>AB</sub> = (y<sub>A</sub>/x<sub>A</sub>) / (y<sub>B</sub>/x<sub>B</sub>)</div>
+    </div>
+    <div class="content-block">
+      <h3>&#128167; Absorption &amp; Stripping</h3>
+      <p>Gas-liquid contacting for removing soluble components from gas streams or stripping volatile species from liquids.</p>
+      <ul>
+        <li>Operating and equilibrium line construction</li>
+        <li>Height of a Transfer Unit (HTU) and NTU</li>
+        <li>Kremser equation for stage counting</li>
+        <li>Packed vs. tray column selection criteria</li>
+      </ul>
+      <div class="formula-box">H<sub>OG</sub> = H<sub>G</sub> + (mG<sub>M</sub>/L<sub>M</sub>)H<sub>L</sub></div>
+    </div>
+    <div class="content-block">
+      <h3>&#9878; Drying, Crystallization &amp; Membranes</h3>
+      <p>Solid-liquid separations and novel membrane processes are critical in pharmaceuticals, food, and water treatment.</p>
+      <ul>
+        <li>Constant-rate and falling-rate drying periods</li>
+        <li>Nucleation and crystal growth kinetics</li>
+        <li>Reverse osmosis: solution-diffusion mechanism</li>
+        <li>Membrane selectivity and permeability</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="text-align: center; padding-bottom: 4rem;">
+  <span class="section-label">Next Up</span>
+  <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">Move to Process &amp; Plant Design</h2>
+  <p style="color: var(--text-muted); margin-bottom: 2rem;">Learn how unit operations are combined into full process flowsheets with control and safety systems.</p>
+  <a href="process-plant.html" class="btn btn-primary">Process &amp; Plant Design &rarr;</a>
+  <a href="fundamentals.html" class="btn btn-outline" style="margin-left: 1rem;">&larr; Fundamentals</a>
+</section>
+
+<footer>
+  <div class="footer-logo">ChemEngineer Hub</div>
+  <p>Free chemical engineering education for everyone.</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="fundamentals.html">Fundamentals</a>
+    <a href="transport-unit-ops.html">Transport &amp; Unit Ops</a>
+    <a href="process-plant.html">Process &amp; Plant</a>
+    <a href="next-gen.html">AI &amp; Next-Gen</a>
+    <a href="career-hub.html">Career Hub</a>
+  </div>
+  <p style="margin-top: 1rem;">&copy; 2026 ChemEngineer Hub &mdash; $0.00</p>
+</footer>
+
+</body>
+</html>
