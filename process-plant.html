@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Process &amp; Plant Design | ChemEngineer Hub</title>
+  <meta name="description" content="Process flowsheets, P&IDs, reaction engineering, process control, safety analysis, and plant economics.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Chem<span>Engineer</span> Hub</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="fundamentals.html">Fundamentals</a></li>
+    <li><a href="transport-unit-ops.html">Transport &amp; Unit Ops</a></li>
+    <li><a href="process-plant.html" class="active">Process &amp; Plant</a></li>
+    <li><a href="next-gen.html">AI &amp; Next-Gen</a></li>
+    <li><a href="career-hub.html">Career Hub</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <h1>Process &amp; <span>Plant Design</span></h1>
+  <p>From reaction kinetics to full plant flowsheets, process control, and industrial safety — engineering at scale.</p>
+</div>
+
+<section>
+  <div class="section-header">
+    <span class="section-label">Module 1</span>
+    <h2>Reaction Engineering</h2>
+  </div>
+  <div class="grid-2">
+    <div class="content-block">
+      <h3>&#9874; Reaction Kinetics</h3>
+      <p>Rate laws describe how fast chemical reactions proceed, forming the basis for reactor sizing and selectivity optimization.</p>
+      <ul>
+        <li>Elementary vs. non-elementary rate laws</li>
+        <li>Rate constant temperature dependence (Arrhenius)</li>
+        <li>Reaction order determination from experimental data</li>
+        <li>Catalytic reactions: Langmuir-Hinshelwood mechanism</li>
+      </ul>
+      <div class="formula-box">-r<sub>A</sub> = k C<sub>A</sub><sup>n</sup></div>
+    </div>
+    <div class="content-block">
+      <h3>&#127981; Reactor Design: CSTR, PFR, PBR</h3>
+      <p>Three ideal reactor models form the foundation of chemical reaction engineering design.</p>
+      <ul>
+        <li><strong style="color: var(--accent)">CSTR (Batch-mixed):</strong> V = F<sub>A0</sub>X / (-r<sub>A</sub>)</li>
+        <li><strong style="color: var(--accent)">PFR (Plug flow):</strong> V = F<sub>A0</sub> &int; dX/(-r<sub>A</sub>)</li>
+        <li><strong style="color: var(--accent)">PBR (Packed bed):</strong> W = F<sub>A0</sub> &int; dX/(-r'<sub>A</sub>)</li>
+        <li>Levenspiel plots for graphical reactor sizing</li>
+      </ul>
+    </div>
+    <div class="content-block">
+      <h3>&#128293; Selectivity &amp; Yield</h3>
+      <p>Multiple reactions compete for reactants. Maximizing selectivity to the desired product drives reactor choice and operating conditions.</p>
+      <ul>
+        <li>Instantaneous selectivity S<sub>D/U</sub> = r<sub>D</sub>/r<sub>U</sub></li>
+        <li>Overall selectivity and yield analysis</li>
+        <li>Series vs. parallel reaction networks</li>
+        <li>Temperature and concentration effects on selectivity</li>
+      </ul>
+    </div>
+    <div class="content-block">
+      <h3>&#128262; Non-ideal Flow &amp; RTD</h3>
+      <p>Real reactors deviate from ideal plug flow or perfect mixing. Residence Time Distribution (RTD) analysis quantifies mixing behaviour.</p>
+      <ul>
+        <li>E(t) and F(t) curves from tracer experiments</li>
+        <li>Tanks-in-series and dispersion models</li>
+        <li>Mean residence time and variance</li>
+        <li>Conversion predictions using RTD data</li>
+      </ul>
+      <div class="formula-box">&tau; = V / v<sub>0</sub> = C<sub>A0</sub>X / (-r<sub>A</sub>)<sub>exit</sub></div>
+    </div>
+  </div>
+</section>
+
+<div style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 4rem 2rem;">
+<section style="padding: 0;">
+  <div class="section-header">
+    <span class="section-label">Module 2</span>
+    <h2>Process Flowsheets &amp; P&amp;IDs</h2>
+  </div>
+  <div class="grid-2">
+    <div class="content-block">
+      <h3>&#128196; Process Flow Diagrams (PFDs)</h3>
+      <p>PFDs show the major equipment items, process streams, and conditions at a high level for conceptual process design.</p>
+      <ul>
+        <li>Equipment representation: reactors, columns, exchangers</li>
+        <li>Stream tables with flow rates, temperatures, pressures</li>
+        <li>Material and energy balance integration</li>
+        <li>Simulation tools: Aspen Plus, HYSYS, ProII</li>
+      </ul>
+      <div class="tags" style="margin-top: 1rem;">
+        <span class="tag">Aspen Plus</span>
+        <span class="tag">HYSYS</span>
+        <span class="tag">ProII</span>
+      </div>
+    </div>
+    <div class="content-block">
+      <h3>&#9881; Piping &amp; Instrumentation Diagrams (P&amp;IDs)</h3>
+      <p>P&amp;IDs add instrumentation, control loops, and safety devices to the PFD, forming the engineering basis for construction.</p>
+      <ul>
+        <li>ISA standard symbols for instruments and valves</li>
+        <li>Control loops: PID controllers, cascade control</li>
+        <li>Safety instrumented systems (SIS) and interlocks</li>
+        <li>P&amp;ID review in HAZOP studies</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</div>
+
+<section>
+  <div class="section-header">
+    <span class="section-label">Module 3</span>
+    <h2>Process Control &amp; Safety</h2>
+  </div>
+  <div class="grid-2">
+    <div class="content-block">
+      <h3>&#128202; Process Control Fundamentals</h3>
+      <p>Feedback and feedforward control maintain process variables at setpoints despite disturbances.</p>
+      <ul>
+        <li>PID controller: Proportional, Integral, Derivative actions</li>
+        <li>Transfer functions and Laplace transforms</li>
+        <li>Bode plots and stability analysis (gain/phase margins)</li>
+        <li>Ziegler-Nichols tuning methods</li>
+      </ul>
+      <div class="formula-box">G<sub>c</sub>(s) = K<sub>c</sub>[1 + 1/(&tau;<sub>I</sub>s) + &tau;<sub>D</sub>s]</div>
+    </div>
+    <div class="content-block">
+      <h3>&#9888; HAZOP &amp; Process Safety</h3>
+      <p>Hazard and Operability (HAZOP) studies systematically identify process deviations and their consequences.</p>
+      <ul>
+        <li>HAZOP guide words: No, More, Less, Reverse, Other Than</li>
+        <li>Bow-tie analysis for barrier identification</li>
+        <li>Layer of Protection Analysis (LOPA)</li>
+        <li>Safety Integrity Level (SIL) determination</li>
+      </ul>
+      <div class="tags" style="margin-top: 1rem;">
+        <span class="tag tag-orange">HAZOP</span>
+        <span class="tag tag-orange">LOPA</span>
+        <span class="tag tag-orange">SIL</span>
+      </div>
+    </div>
+    <div class="content-block">
+      <h3>&#128176; Plant Economics &amp; Costing</h3>
+      <p>Engineering decisions must be evaluated on economic grounds using capital and operating cost estimates.</p>
+      <ul>
+        <li>Capital cost estimation: Lang and Guthrie methods</li>
+        <li>Operating costs: utilities, raw materials, labour</li>
+        <li>Net Present Value (NPV) and Internal Rate of Return (IRR)</li>
+        <li>Sensitivity analysis and break-even analysis</li>
+      </ul>
+      <div class="formula-box">NPV = &sum; CF<sub>t</sub> / (1+r)<sup>t</sup></div>
+    </div>
+    <div class="content-block">
+      <h3>&#127981; Scale-up &amp; Commissioning</h3>
+      <p>Moving from lab to pilot to full-scale plant introduces challenges that require systematic engineering approaches.</p>
+      <ul>
+        <li>Dimensional analysis and scale-up rules</li>
+        <li>Pilot plant design and data collection</li>
+        <li>Pre-startup safety review (PSSR)</li>
+        <li>Commissioning, start-up, and performance testing</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="text-align: center; padding-bottom: 4rem;">
+  <span class="section-label">Next Up</span>
+  <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">Explore AI &amp; Next-Gen ChemE</h2>
+  <p style="color: var(--text-muted); margin-bottom: 2rem;">Discover how machine learning and digital tools are transforming chemical engineering practice.</p>
+  <a href="next-gen.html" class="btn btn-primary">AI &amp; Next-Gen &rarr;</a>
+  <a href="transport-unit-ops.html" class="btn btn-outline" style="margin-left: 1rem;">&larr; Transport &amp; Unit Ops</a>
+</section>
+
+<footer>
+  <div class="footer-logo">ChemEngineer Hub</div>
+  <p>Free chemical engineering education for everyone.</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="fundamentals.html">Fundamentals</a>
+    <a href="transport-unit-ops.html">Transport &amp; Unit Ops</a>
+    <a href="process-plant.html">Process &amp; Plant</a>
+    <a href="next-gen.html">AI &amp; Next-Gen</a>
+    <a href="career-hub.html">Career Hub</a>
+  </div>
+  <p style="margin-top: 1rem;">&copy; 2026 ChemEngineer Hub &mdash; $0.00</p>
+</footer>
+
+</body>
+</html>
