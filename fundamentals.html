@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentals | ChemEngineer Hub</title>
+  <meta name="description" content="Core chemical engineering fundamentals: engineering math, thermodynamics, physical chemistry, and mass/energy balances.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Chem<span>Engineer</span> Hub</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="fundamentals.html" class="active">Fundamentals</a></li>
+    <li><a href="transport-unit-ops.html">Transport &amp; Unit Ops</a></li>
+    <li><a href="process-plant.html">Process &amp; Plant</a></li>
+    <li><a href="next-gen.html">AI &amp; Next-Gen</a></li>
+    <li><a href="career-hub.html">Career Hub</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <h1>ChemE <span>Fundamentals</span></h1>
+  <p>The mathematical, thermodynamic, and chemical foundations every chemical engineer must master.</p>
+</div>
+
+<section>
+  <div class="section-header">
+    <span class="section-label">Module 1</span>
+    <h2>Engineering Mathematics</h2>
+    <p>The quantitative toolkit underpinning all chemical engineering analysis.</p>
+  </div>
+  <div class="grid-2">
+    <div class="content-block">
+      <h3>&#8747; Differential Equations</h3>
+      <p>Chemical engineering problems frequently involve rates of change. ODEs describe how concentrations, temperatures, and pressures evolve over time or along a reactor.</p>
+      <ul>
+        <li>First-order linear ODEs: dy/dx + P(x)y = Q(x)</li>
+        <li>Separation of variables for simple rate equations</li>
+        <li>Systems of ODEs for multi-component balances</li>
+        <li>Numerical methods: Euler, Runge-Kutta (RK4)</li>
+      </ul>
+      <div class="formula-box">dy/dt = ky &nbsp;&rarr;&nbsp; y(t) = y&#8320; e<sup>kt</sup></div>
+    </div>
+    <div class="content-block">
+      <h3>&#8721; Linear Algebra &amp; Matrices</h3>
+      <p>Multi-component systems require solving simultaneous equations. Matrix methods are essential for process simulation and control.</p>
+      <ul>
+        <li>Gaussian elimination and LU decomposition</li>
+        <li>Eigenvalues for stability analysis</li>
+        <li>Least squares regression for data fitting</li>
+        <li>Matrix operations in MATLAB and Python (NumPy)</li>
+      </ul>
+      <div class="formula-box">Ax = b &nbsp;&rarr;&nbsp; x = A<sup>-1</sup>b</div>
+    </div>
+    <div class="content-block">
+      <h3>&#8706; Partial Differential Equations</h3>
+      <p>Distributed parameter systems like heat exchangers and packed beds require PDEs for full spatial-temporal description.</p>
+      <ul>
+        <li>Parabolic PDEs: transient heat and mass transfer</li>
+        <li>Elliptic PDEs: steady-state diffusion problems</li>
+        <li>Hyperbolic PDEs: wave propagation in pipes</li>
+        <li>Finite difference and finite element methods</li>
+      </ul>
+      <div class="formula-box">&part;T/&part;t = &alpha; &part;&sup2;T/&part;x&sup2;</div>
+    </div>
+    <div class="content-block">
+      <h3>&#128202; Statistics &amp; Data Analysis</h3>
+      <p>Engineers interpret experimental data, fit models, and design experiments using statistical tools.</p>
+      <ul>
+        <li>Probability distributions: normal, Poisson, binomial</li>
+        <li>Hypothesis testing and confidence intervals</li>
+        <li>Design of Experiments (DoE) and ANOVA</li>
+        <li>Regression analysis and error propagation</li>
+      </ul>
+      <div class="formula-box">R&sup2; = 1 - SS<sub>res</sub>/SS<sub>tot</sub></div>
+    </div>
+  </div>
+</section>
+
+<div style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 4rem 2rem;">
+<section style="padding: 0;">
+  <div class="section-header">
+    <span class="section-label">Module 2</span>
+    <h2>Thermodynamics</h2>
+    <p>Energy, entropy, equilibrium, and the laws that govern all physical and chemical processes.</p>
+  </div>
+  <div class="grid-2">
+    <div class="content-block">
+      <h3>&#9651; The Four Laws</h3>
+      <ul>
+        <li><strong style="color: var(--accent)">Zeroth Law:</strong> Thermal equilibrium and temperature measurement basis.</li>
+        <li><strong style="color: var(--accent)">First Law:</strong> Energy conservation: dU = &delta;Q - &delta;W</li>
+        <li><strong style="color: var(--accent)">Second Law:</strong> Entropy of an isolated system never decreases: dS &ge; 0</li>
+        <li><strong style="color: var(--accent)">Third Law:</strong> Entropy approaches zero as temperature approaches absolute zero.</li>
+      </ul>
+    </div>
+    <div class="content-block">
+      <h3>&#128200; Phase Equilibria &amp; VLE</h3>
+      <p>Vapour-liquid equilibrium is central to distillation and absorption design.</p>
+      <ul>
+        <li>Raoult's Law: y&#7522;P = x&#7522;P&#7522;<sup>sat</sup></li>
+        <li>Henry's Law for dilute solutions</li>
+        <li>Equations of state: ideal gas, van der Waals, Peng-Robinson</li>
+        <li>Activity coefficients: NRTL, UNIQUAC, Wilson models</li>
+      </ul>
+      <div class="formula-box">G = H - TS &nbsp;|&nbsp; &Delta;G&deg; = -RT ln K</div>
+    </div>
+    <div class="content-block">
+      <h3>&#9881; Gibbs Free Energy &amp; Equilibrium</h3>
+      <p>Spontaneity and equilibrium are governed by the minimization of Gibbs free energy at constant T and P.</p>
+      <ul>
+        <li>Chemical potential and fugacity concepts</li>
+        <li>Equilibrium constants and Le Chatelier's principle</li>
+        <li>Effect of temperature: van't Hoff equation</li>
+        <li>Effect of pressure on gas-phase equilibria</li>
+      </ul>
+      <div class="formula-box">d(ln K)/d(1/T) = -&Delta;H&deg;/R</div>
+    </div>
+    <div class="content-block">
+      <h3>&#128293; Combustion &amp; Energy Cycles</h3>
+      <p>Power generation, furnace design, and environmental analysis require combustion thermodynamics.</p>
+      <ul>
+        <li>Standard heats of formation and reaction</li>
+        <li>Adiabatic flame temperature calculation</li>
+        <li>Carnot, Rankine, and Brayton cycles</li>
+        <li>Efficiency limits and irreversibility</li>
+      </ul>
+      <div class="formula-box">&eta;<sub>Carnot</sub> = 1 - T<sub>cold</sub>/T<sub>hot</sub></div>
+    </div>
+  </div>
+</section>
+</div>
+
+<section>
+  <div class="section-header">
+    <span class="section-label">Module 3</span>
+    <h2>Mass &amp; Energy Balances</h2>
+    <p>The foundation of every process calculation: what goes in must come out (or accumulate).</p>
+  </div>
+  <div class="grid-2">
+    <div class="content-block">
+      <h3>&#9878; Mass Balance Framework</h3>
+      <p>For any control volume under steady-state conditions:</p>
+      <div class="formula-box">[In] - [Out] + [Generation] - [Consumption] = [Accumulation]</div>
+      <ul style="margin-top: 1rem;">
+        <li>Tie components and recycle stream calculations</li>
+        <li>Reactive systems with extent of reaction</li>
+        <li>Multi-unit process flowsheets</li>
+        <li>Degrees of freedom analysis</li>
+      </ul>
+    </div>
+    <div class="content-block">
+      <h3>&#128262; Energy Balance Framework</h3>
+      <p>For open systems with flow work (shaft work) and heat transfer:</p>
+      <div class="formula-box">&Delta;H&#775; = Q&#775; - W&#775;<sub>s</sub></div>
+      <ul style="margin-top: 1rem;">
+        <li>Sensible heat: Q = m&middot;C<sub>p</sub>&middot;&Delta;T</li>
+        <li>Latent heat for phase changes</li>
+        <li>Heat of reaction contributions</li>
+        <li>Combined mass and energy balance problems</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="text-align: center; padding-bottom: 4rem;">
+  <span class="section-label">Next Up</span>
+  <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">Ready for Transport &amp; Unit Operations?</h2>
+  <p style="color: var(--text-muted); margin-bottom: 2rem;">Apply these fundamentals to real unit operations like distillation, heat exchangers, and reactors.</p>
+  <a href="transport-unit-ops.html" class="btn btn-primary">Transport &amp; Unit Ops &rarr;</a>
+  <a href="index.html" class="btn btn-outline" style="margin-left: 1rem;">Back to Home</a>
+</section>
+
+<footer>
+  <div class="footer-logo">ChemEngineer Hub</div>
+  <p>Free chemical engineering education for everyone.</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="fundamentals.html">Fundamentals</a>
+    <a href="transport-unit-ops.html">Transport &amp; Unit Ops</a>
+    <a href="process-plant.html">Process &amp; Plant</a>
+    <a href="next-gen.html">AI &amp; Next-Gen</a>
+    <a href="career-hub.html">Career Hub</a>
+  </div>
+  <p style="margin-top: 1rem;">&copy; 2026 ChemEngineer Hub &mdash; $0.00</p>
+</footer>
+
+</body>
+</html>
